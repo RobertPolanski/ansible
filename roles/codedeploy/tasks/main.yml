@@ -1,8 +1,9 @@
 ---
 # tasks file for codedeploy
-# - name: be sure codedeploy is running and enabled
- # aws_codedeploy: 
- #   enabled: on 
- - name: install codedeploy agent
-   sudo: yes
-   action: aws_codedeploy enabled=true
+  - name: be sure codedeploy is running and enabled
+    aws_codedeploy: 
+    enabled: true
+    
+ # - name: install codedeploy agent
+  # sudo: yes
+  # action: aws_codedeploy enabled=true
