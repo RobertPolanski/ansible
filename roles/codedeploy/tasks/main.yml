@@ -1,6 +1,6 @@
 ---
 # tasks file for codedeploy
 - name: install codedeploy agent
-    sudo: yes
-    action: aws_codedeploy enabled=true
+  sudo: yes
+  action: aws_codedeploy enabled=true
 
