@@ -11,7 +11,9 @@
     state: present
 
 - name: Add Jenkins repository
-  shell: wget -O /etc/yum.repos.d/jenkins.repo https://pkg.jenkins.io/redhat/jenkins.repo
+  get_url:
+    url: https://pkg.jenkins.io/redhat/jenkins.repo
+    dest: /etc/yum.repos.d/
 
 - name: Import Jenkins GPG key
   rpm_key:
